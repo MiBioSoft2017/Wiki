@@ -1,56 +1,181 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <!-- bootstrap imports -->
-
-	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <head>
+      <!-- bootstrap imports -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<!-- Comfortaa Import -->
-	  <link href='https://fonts.googleapis.com/css?family=Comfortaa:300,400,700' rel='stylesheet' type='text/css'>
-
-
-	  <!-- https://work.smarchal.com/twbscolor/css/00274c0a436cecf0f1ffffff0 -->
-    <link rel="stylesheet" href="styling.css">
-
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-custom">
-    <div class="container-fluid navig_bar">
-		<div class="navbar-header">
-      <p class="navbar-brand"><a href="Homepage.html">Home</a></p>
-		</div>
-		<ul class="nav navbar-nav">
-		  <li class="dropdown navig_bar_button"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Project <span class="caret"></span></a>
-			<ul class="dropdown-menu">
-        <li><a href="Project_Overview.html">Overview</a></li>
-        <li><a href="Project_Installation.html">Installation</a></li>
-        <li><a href="Project_Demonstrate.html">User Guide/Demonstrate</a></li>
-        <li><a href="Project_Results.html">Results</a></li>
-			</ul>
-		  </li>
-		  <li class="dropdown navig_bar_button"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Outreach <span class="caret"></span></a>
-			<ul class="dropdown-menu">
-        <li><a href="Outreach_Collaboration.html">Collaboration</a></li>
-        <li><a href="Outreach_HP_Silver.html">HP Silver</a></li>
-        <li><a href="Outreach_HP_Gold.html">HP Gold</a></li>
-			</ul>
-		  </li>
-		  <li class="navig_bar_button"><a href="Attributions.html">Attributions</a></li>
-		</ul>
-		</div>
-    </nav>
-
-	<div class="top-buffer container-fluid">
-		<div class="col-xs-1"></div>
-		<div class="col-xs-10">
-
-      <div class="banner col-sm-12">
-        <h1 id="index_title">Overview<br><small style="font-size: 50%;">State the problem, cite evidence, talk about how ProtoCat solves this</small></h1>
+      <!-- Comfortaa Import -->
+      <link href='https://fonts.googleapis.com/css?family=Comfortaa:300,400,700' rel='stylesheet' type='text/css'>
+      <!-- https://work.smarchal.com/twbscolor/css/00274c0a436cecf0f1ffffff0 -->
+      <link rel="stylesheet" href="styling.css">
+   </head>
+   <body>
+      <div class="navbar-wrapper">
+         <div class="container">
+            <div class="navbar  navbar-static-top">
+               <ul class="nav navbar-nav">
+                  <li class="navig_bar_button"><a href="Homepage.html">Home</a></li>
+                  <li class="dropdown navig_bar_button">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="Project_Overview.html">Overview</a></li>
+                        <li><a href="Project_Installation.html">Installation</a></li>
+                        <li><a href="Project_Demonstrate.html">User Guide/Demonstrate</a></li>
+                        <li><a href="Project_Results.html">Results</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown navig_bar_button">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Outreach <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="Outreach_Collaboration.html">Collaboration</a></li>
+                        <li><a href="Outreach_HP_Silver.html">HP Silver</a></li>
+                        <li><a href="Outreach_HP_Gold.html">HP Gold</a></li>
+                     </ul>
+                  </li>
+                  <li class="navig_bar_button"><a href="Attributions.html">Attributions</a></li>
+               </ul>
+            </div>
+         </div>
       </div>
-
+      <header>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12" id = "headerImage">
+                  <img class = "Header-img" src="photos/overview.png" />
+                  <h1 id = "headerImageh1">Overview</h1>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="top-buffer container-fluid">
+         <div class="col-xs-1"></div>
+         <div class="col-xs-10">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+            <h1 class="grey-text heading-weight" align = "center">Background</h1>
+            <p>
+               <br>
+            <div class="row" style="border-bottom:thin solid;"></div>
+            <br>
+            <br>
+            <p id = "doubleSpace" class="p-font grey-text">Two years ago the Michigan Software 2014 team began development
+               of ProtoCat 1.0. Like many innovative ideas, ProtoCat began because of a problem.
+               <a class="a-over" href="https://peerj.com/articles/148">Studies</a> have estimated
+               that only 10-25% of published scientific results are reproducible.  A 2014 survey conducted
+               by the Michigan Software team confirmed that the repeatability problem exists in synthetic
+               biology, with every scientist surveyed reporting prior struggles with replicating protocols.
+               The majority of these scientists indicated unclear language and missing steps are the greatest
+               contributors to the irreproducibility of synthetic biology protocols. A <a class="a-over"
+                  href="http://2015.igem.org/Team:Michigan_Software/Outreach">second study</a> conducted by last
+               year's Michigan Software team only further confirmed the sentiments of the first study. These
+               issues are what ProtoCat has been designed to solve.
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+            <h1 class="grey-text heading-weight" align = "center">Solution</h1>
+            </p>
+            <br>
+            <div class="row" style="border-bottom:thin solid;"></div>
+            <br>
+            <br>
+            <p id = "doubleSpace" class="p-font grey-text">Every respondent of the second survey indicated that they
+               would use a database to browse and download protocols, with over 85% indicating that
+               they would upload and maintain their own protocols if such a site existed. ProtoCat 3.0
+               is a free database of crowd sourced protocols designed to make existing protocols more
+               repeatable and enable more accurate computational models of biological systems. We believe
+               this can most efficiently be accomplished with a commitment to open source protocols and a
+               broader more active community of digital troubleshooters. ProtoCat 3.0 works to establish
+               such a community by giving anyone with an internet connection or smartphone access to a
+               repository of synthetic biology protocols collected from all over the world. Additionally,
+               ProtoCat 3.0 encourages the development of higher quality, more repeatable protocols by
+               allowing users to document, rate, review, and edit existing methods.
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>
+            <h1 class="grey-text heading-weight" align = "center">ProtoCat 4.0</h1>
+            </p>
+            <br>
+            <div class="row" style="border-bottom:thin solid;"></div>
+            <br>
+            <br>
+            <p id = "doubleSpace" class="p-font grey-text">ProtoCat 4.0 is optimized for collaboration among users
+               and offers the best user experinece we have developed. We've added features such as threaded comments, 
+               notifications, protocol favoriting, and a new chat system called ProtoChat in this 
+               years verions of ProtoCat. Now users can communicate through commenting and chatting 
+               to make improvements on existing protocols or favorite one they like to quickly relocate 
+               it. ProtoCat also recieved a password recover system, notifications, and a better search 
+               algorithm to search more fields of a protocol. In addition, users can now create drafts 
+               of a protocol which allows them to start and finish a new protocol at their convienience. 
+               These are are all important features that contribute to a better user experience and our 
+               best version of ProtoCat.
+            </p>
+         </div>
+         <br>
+         <br>
+         <br>
+         <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <footer>
+         <div class="container-footer bg-3">
+            <div class = "row">
+               <div class = "col-sm-12 text-center">
+                  <h3 id = "h3Header">Important Links:</h3>
+                  <table class = "Footer-Table" align = "center">
+                     <tr>
+                        <td>
+                           <p><a href="Project_Overview.html">Overview</a></p>
+                        </td>
+                        <td>
+                           <p><a href="Project_Results.html">Results</a></p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><a href="Installation.html">Installation</a></p>
+                        </td>
+                        <td>
+                           <p><a href="Outreach_Collaboration.html">Collaboration</a></p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p><a href="Project_Demonstration.html">Demonstration</a></p>
+                        </td>
+                        <td>
+                           <p><a href="Attributions.html">Attributions</a></p>
+                        </td>
+                     </tr>
+                     <td>
+                        <p><a href="Outreach_HP_Gold.html">HP Gold</a></p>
+                     </td>
+                     <td>
+                        <p><a href="Outreach_HP_Silver.html">HP Silver</a></p>
+                     </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>

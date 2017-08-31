@@ -1,19 +1,19 @@
 		body {
 			font-family: 'Comfortaa';
-			color: #6792A0;
+			color: #00274c;
 
 		}
 
 		.navbar-default {
-		  background-color: #6792A0;
+		  background-color: #00274c;
 		  border-color: #0a436c;
 		}
 
 		.slide-prev {
-    position:absolute;
-    top:400px;
-    left:0;
-    z-index:100;
+			position:absolute;
+			top:400px;
+			left:0;
+			z-index:100;
 		}
 
 		.slide-next {
@@ -30,15 +30,17 @@
 		    width:auto;
 		}
 
-		.carousel-inner > .item {
-		    height:800px !important;
-		    overflow:hidden;
+		.carousel-item {
+			background-size: cover;
 		}
-
-		.carousel-inner > .item {
-		    height:460px !important;
-		    overflow:hidden;
+		
+		.carousel-caption {
+			position: absolute;
+			top: 50%; 
+			transform: translateY(-50%); 
+			text-align: center;
 		}
+		
 		.navbar-default .navbar-brand {
 		  color: #ecf0f1;
 		}
@@ -63,7 +65,7 @@
 		  background-color: #0a436c;
 		}
 
-	  p > a {
+		p > a {
 		  color: #ecf0f1;
 		}
 
@@ -132,7 +134,7 @@
 		}
 
 		.navbar {
-    margin-bottom: 0;
+			margin-bottom: 0;
 		}
 
 		.banner {
@@ -140,13 +142,14 @@
 			padding-top:0px;
 			margin: 0px;
 		}
+		
 		#index_title {
 			font-family: 'Comfortaa';
 			font-style: normal;
 			font-size: 300%;
 			text-align: center;
 			float: none;
-			color: #1A1A80;
+			color: #6792A0;
 			margin-top: 20px;
 			padding-top: 0px;
 			padding-bottom: 0px;
@@ -163,22 +166,39 @@
 		.HumanPractices-img {
 			width: 960px;
 			height: 460px;
-			margin-bottom: 0px;
-			margin-top: 0px;
-			padding: 0px;
-			display: block;
 		}
 
 		.Header-img {
 			width: 100%;
 			height: 400px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: relative;
 		}
+		
+		#headerImage {
+			width:100%;
+			height:400px;
+			min-height: 400px;
+		    min-width:100%;
+			position: relative;
+		}
+			
+		#headerImage h1 { 
+			margin: 0;
+			color: white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%)
+		} 
 
 		.a-over {
-			color: #6792A0;
+			color: #00274c;
 		}
 
-    .flip3D{
+		.flip3D{
             width:315px; height:315px; margin:10px; float:center; margin: auto;
             border-weight: 10px;
             cursor: pointer;
@@ -186,7 +206,7 @@
         }
         .flip3D > .front{
             border-radius: 5px;
-            border-color: #6792A0;
+            border-color: #00274c;
             background: rgba(0,0,0,0.0);
             border-style: solid;
             position:absolute;
@@ -206,7 +226,7 @@
             padding-top:20px;
             padding-bottom:20px;
             border-radius: 5px;
-            border-color: #6792A0;
+            border-color: #00274c;
             background: rgba(0,0,0,0.0);
             border-style: solid;
             position:absolute;
@@ -235,11 +255,12 @@
             -webkit-transform: translateY(-50%);
                     transform: translateY(-50%);
         }
-      img.board-img {
-        height: 220px;
-        width: 220px;
-        border-radius: 5px;
-      }
+		  img.board-img {
+			height: 220px;
+			width: 220px;
+			border-radius: 5px;
+		  }
+		  
       h3.name-tag {
         font-family: 'Comfortaa', cursive !important;
         font-size: 15px;
@@ -262,8 +283,7 @@
             margin-bottom: 0px;
 		  }
 
-			p {
-				color: #00274c;
+			#doubleSpace {
 				line-height: 30px;
 			}
 
@@ -273,3 +293,109 @@
             margin-top: 0px;
             padding-top: 0px;
 		  }
+
+			li {
+				color: #00274c; 
+			}
+			
+			a {
+				color: white;
+			}
+
+			ul.Content {
+			    width: 400px;
+			    margin:0 auto;
+			    text-align:left;
+			}
+
+			h3 {
+				color: #00274c;
+			}
+			
+			 h1 { 
+				color: #00274c; 
+			 } 
+			 
+			#h3Header {
+				color: grey;
+			}
+			
+			#h1Header {
+				color: white;
+			}
+			
+			#h1MaizeHeader {
+				color: #ffc72C;
+			}
+			
+			.Footer-Table {
+				border-collapse: separate;
+				border-spacing:  5px;
+			}
+			
+			.overlay { 
+			  position:absolute;
+			  z-index:12;
+			  top:50%;
+			  left:0;
+			  width:100%;
+			  text-align:center;
+			  vertical-align: top;
+			}
+			
+			@media (min-width: 768px) {
+
+			  /* Navbar positioning foo */
+			  .navbar-wrapper {
+				margin-top: 0;
+				margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+			  }
+			  /* The navbar becomes detached from the top, so we round the corners */
+			  .navbar-wrapper .navbar {
+				border-radius: 4px;
+			  }
+			  
+			  /* Special class on .container surrounding .navbar, used for positioning it into place. */
+			.navbar-wrapper {
+			  background-color: #00274c;
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  z-index: 10;
+			}
+			
+			.container-footer {
+				padding-top: 50px;
+				padding-bottom: 50px;
+				background-color: #00274c;
+			}
+			
+			.Banner_img {
+			margin: auto;
+			margin-bottom: 0px;
+			margin-top: 0px;
+			width: 50%;
+			padding: 0px;
+			display: block;
+			}	
+
+			.HumanPractices-img {
+				width: 960px;
+				height: 460px;
+			}
+			
+			
+		}
+		
+		#ProtoCat4Button {
+			background-color: #00274c; 
+			border: none;
+			color: white;
+			padding: 8px 18px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+		}
+
